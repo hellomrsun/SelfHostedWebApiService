@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/IocInitializer/bin/Debug
+/IocInitializer/obj/Debug
+/.vs
+/packages
+/TopShelfHost/bin/Debug
+/TopShelfHost/obj/Debug
+/WeatherApi/bin/Debug
+/WeatherApi/obj/Debug
+*.user
