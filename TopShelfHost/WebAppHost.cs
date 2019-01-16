@@ -1,21 +1,20 @@
 ﻿using System;
 using Microsoft.Owin.Hosting;
-using WeatherApi;
 
 namespace TopShelfHost
 {
-    public class Service
+    public class WebAppHost
     {
-        private IDisposable app;
+        private IDisposable _app;
 
         public void Start()
         {
-            app = WebApp.Start<Weather>("http://localhost:1234");
+            _app = WebApp.Start<WeatherService>("http://localhost:1234");
         }
 
         public void Stop()
         {
-            app.Dispose();
+            _app.Dispose();
         }
 
     }

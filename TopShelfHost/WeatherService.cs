@@ -6,7 +6,7 @@ using WeatherApi;
 
 namespace TopShelfHost
 {
-    public class Weather
+    public class WeatherService
     {
         public void Configuration(IAppBuilder app)
         {

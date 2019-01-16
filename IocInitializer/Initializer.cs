@@ -8,7 +8,7 @@ namespace IocInitializer
 {
     public class Initializer
     {
-        private IUnityContainer _unityContainer;
+        private readonly IUnityContainer _unityContainer;
 
         public Initializer()
         {

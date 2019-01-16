@@ -1,17 +1,15 @@
 ﻿using System;
-using TopShelfHost;
 
-namespace Starter
+namespace TopShelfHost
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var hoster = new ServiceHost();
+            var serviceHost = new ServiceHost();
 
-            hoster.Run();
-
-
+            serviceHost.Run();
+            
             Console.Read();
         }
     }

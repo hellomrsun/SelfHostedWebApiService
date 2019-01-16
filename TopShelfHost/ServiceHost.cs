@@ -8,9 +8,9 @@ namespace TopShelfHost
         {
             var host = HostFactory.New(x =>
             {
-                x.Service<Service>(s =>
+                x.Service<WebAppHost>(s =>
                 {
-                    s.ConstructUsing(v => new Service());
+                    s.ConstructUsing(v => new WebAppHost());
                     s.WhenStarted(w => w.Start());
                     s.WhenStopped(w => w.Stop());
                 });
